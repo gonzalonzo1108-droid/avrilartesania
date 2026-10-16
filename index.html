@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es-PE" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avril · Artesanía hecha dulce | Cajas de postres personalizadas en Lima</title>
+  <meta name="description" content="Diseña tu caja de chocotejas, alfajores, trufas y brownies con ayuda de IA y mírala antes de pagar. Repostería artesanal con delivery en Lima.">
+  <meta name="theme-color" content="#FFF6F2">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Avril · Artesanía hecha dulce">
+  <meta property="og:description" content="Diseña tu caja de chocotejas, alfajores, trufas y brownies con ayuda de IA y mírala antes de pagar. Repostería artesanal con delivery en Lima.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:locale" content="es_PE">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Poppins:wght@400;500&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero-caja-regalo.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=20261016">
+  <script defer src="lib/gsap.min.js?v=20261016"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20261016"></script>
+  <script defer src="lib/manifest.js?v=20261016"></script>
+  <script defer src="main.js?v=20261016"></script>
+</head>
+<body class="has-mbar">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Avril, ir al inicio">
+        <img src="assets/img/logo-avril.png" srcset="assets/img/logo-avril.png 1x, assets/img/logo-avril@2x.png 2x" alt="Avril · artesanía hecha dulce" width="99" height="56">
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="disena.html">Diseña con IA</a>
+        <a href="inspirate.html">Inspírate</a>
+        <a href="empresas.html">Empresas</a>
+        <a href="mi-avril.html">Mi Avril</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+        <button class="burger" type="button" data-open-drawer aria-controls="drawer" aria-expanded="false" aria-label="Abrir menú">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="drawer" id="drawer" aria-label="Menú">
+    <div class="drawer-top">
+      <img src="assets/img/logo-avril.png" alt="Avril" width="71" height="40" style="height:40px;width:auto">
+      <button class="burger" type="button" data-close-drawer aria-label="Cerrar menú"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <nav aria-label="Principal móvil">
+      <a href="disena.html">Diseña con IA</a>
+      <a href="inspirate.html">Inspírate</a>
+      <a href="empresas.html">Empresas</a>
+      <a href="mi-avril.html">Mi Avril</a>
+    </nav>
+    <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+    <a class="btn btn-outline" style="margin-top:.7rem" href="https://wa.me/51944999854" target="_blank" rel="noopener">Hablar con un repostero</a>
+  </div>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="tag reveal"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg>Artesanía hecha dulce + IA</span>
+          <h1 class="reveal reveal-d1">¿Lo viste en Pinterest? <em>Lo hacemos real.</em></h1>
+          <p class="hero-lead reveal reveal-d2">Diseña tu caja de chocotejas, alfajores y trufas, y mírala tal cual antes de pagar.</p>
+
+          <label class="dropzone reveal reveal-d2" data-home-drop>
+            <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg></span>
+            <strong>Sube tu referencia</strong>
+            <p>Arrastra una imagen o pega el link de Pinterest, TikTok o Instagram</p>
+            <input type="file" accept="image/*" aria-label="Sube tu imagen de referencia">
+          </label>
+          <form class="link-row reveal reveal-d3" data-home-link style="max-width:34rem">
+            <label class="sr-only" for="home-link">Link de tu referencia</label>
+            <input class="input" id="home-link" type="url" inputmode="url" placeholder="https://pin.it/…">
+            <button class="btn btn-soft" type="submit">Usar link</button>
+          </form>
+
+          <div class="hero-ctas reveal reveal-d3">
+            <a class="btn btn-primary" href="disena.html">Crear mi caja
+              <svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn-link" href="#cajas-listas">Ver cajas listas</a>
+          </div>
+          <div class="resume" data-resume hidden>
+            <span>Dejaste tu caja a medio armar. ¿La terminamos?</span>
+            <a class="btn btn-dark btn-sm" href="disena.html?borrador=1">Terminar mi caja</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-d2">
+          <div class="arch">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <img data-parallax src="assets/img/hero-caja-regalo.webp" alt="Caja de regalo abierta con trufas rosadas, bitter y blancas hechas a mano" width="1000" height="1280" fetchpriority="high" loading="eager">
+          </div>
+          <span class="seal seal-a"><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>Garantía de fidelidad</span>
+          <span class="seal seal-b">Tu caja de 9 · <span class="seal-price" data-demo-price>S/ 39.50</span></span>
+          <span class="hero-deco" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ¿QUÉ QUIERES CREAR? ===================== -->
+    <section class="section" style="padding-top:0" aria-labelledby="crear-t">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Empieza por aquí</span>
+          <h2 id="crear-t">¿Qué quieres <em>crear?</em></h2>
+        </div>
+        <div class="create-grid">
+          <a class="card card-hover create-card reveal" href="disena.html">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-amiga.webp" alt="Caja de regalo con bombones y trufas surtidas" loading="lazy" decoding="async" width="800" height="800"></div>
+            <div class="card-body"><div><h3>Caja de regalo</h3><p>Arma tu mix de 4 a 24 piezas</p></div><span class="arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          </a>
+          <a class="card card-hover create-card reveal reveal-d1" href="disena.html">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/torta-alfajor.webp" alt="Capas de masa de alfajor rellenas de manjar blanco" loading="lazy" decoding="async" width="800" height="800"></div>
+            <div class="card-body"><div><h3>Torta de alfajor</h3><p>Con tu mensaje o foto comestible</p></div><span class="arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          </a>
+          <a class="card card-hover create-card reveal reveal-d2" href="empresas.html">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-corporativa.webp" alt="Caja con bombones ordenados en cuadrícula para regalos corporativos" loading="lazy" decoding="async" width="800" height="800"></div>
+            <div class="card-body"><div><h3>Para empresas</h3><p>Cajitas con el logo de tu marca</p></div><span class="arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          </a>
+          <a class="card card-hover create-card reveal reveal-d3" href="disena.html">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/mesa-postres.webp" alt="Bandejas de postres pequeños en una mesa de evento" loading="lazy" decoding="async" width="800" height="800"></div>
+            <div class="card-body"><div><h3>Mesa de postres</h3><p>Todo en la paleta de tu evento</p></div><span class="arrow" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BANDA: REFERENCIA VS CAJA ===================== -->
+    <section class="section band" aria-labelledby="ba-t">
+      <div class="container">
+        <div class="section-head center reveal">
+          <h2 id="ba-t">Tu referencia <em>vs.</em> tu caja Avril</h2>
+          <p>Pedidos reales, sin “expectativa vs. realidad”. Desliza para comparar.</p>
+        </div>
+        <div class="ba-grid">
+          <figure class="ba-item reveal">
+            <div class="ba">
+              <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+              <img src="assets/img/antes-1.webp" alt="Referencia: bombones de colores ordenados sobre fondo rosado" loading="lazy" decoding="async">
+              <img class="ba-after" src="assets/img/despues-1.webp" alt="Caja Avril: trufas surtidas en bandeja blanca" loading="lazy" decoding="async">
+              <span class="ba-label l">Referencia · Pinterest</span><span class="ba-label r">Caja Avril</span>
+              <span class="ba-handle" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Comparar referencia y caja Avril: caja aniversario">
+            </div>
+            <figcaption>Caja aniversario · 12 trufas rosadas</figcaption>
+          </figure>
+          <figure class="ba-item reveal reveal-d1">
+            <div class="ba">
+              <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+              <img src="assets/img/antes-2.webp" alt="Referencia: galletas rellenas apiladas" loading="lazy" decoding="async">
+              <img class="ba-after" src="assets/img/despues-2.webp" alt="Caja Avril: capas de alfajor rellenas de manjar" loading="lazy" decoding="async">
+              <span class="ba-label l">Referencia · TikTok</span><span class="ba-label r">Caja Avril</span>
+              <span class="ba-handle" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Comparar referencia y caja Avril: torta de alfajor">
+            </div>
+            <figcaption>Torta de alfajor con foto comestible</figcaption>
+          </figure>
+          <figure class="ba-item reveal reveal-d2">
+            <div class="ba">
+              <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+              <img src="assets/img/antes-3.webp" alt="Referencia: postre de chocolate con hojilla dorada" loading="lazy" decoding="async">
+              <img class="ba-after" src="assets/img/despues-3.webp" alt="Caja Avril: bandeja de bombones de chocolate decorados" loading="lazy" decoding="async">
+              <span class="ba-label l">Referencia · Instagram</span><span class="ba-label r">Caja Avril</span>
+              <span class="ba-handle" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span>
+              <input type="range" min="0" max="100" value="50" aria-label="Comparar referencia y caja Avril: chocotejas">
+            </div>
+            <figcaption>Chocotejas con iniciales doradas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ASÍ DE SIMPLE ===================== -->
+    <section class="section" aria-labelledby="pasos-t">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2 id="pasos-t">Así de <em>simple</em></h2>
+        </div>
+        <div class="steps">
+          <div class="step-card reveal"><div class="step-num">1</div><h3>Sube tu idea</h3><p>La IA lee colores, piezas y empaque, y te dice qué podemos replicar.</p></div>
+          <div class="step-card reveal reveal-d1"><div class="step-num">2</div><h3>Arma y mira tu caja</h3><p>Elige piezas, colores y mensaje, con el precio en vivo.</p></div>
+          <div class="step-card reveal reveal-d2"><div class="step-num">3</div><h3>Síguela hasta su puerta</h3><p>Ves fotos reales de tu pedido mientras lo preparamos.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CAJAS LISTAS ===================== -->
+    <section class="section" id="cajas-listas" style="padding-top:0" aria-labelledby="listas-t">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">¿Sin referencia o con poco tiempo?</span>
+          <h2 id="listas-t">Parte de una <em>caja lista</em></h2>
+          <p>Elige una y cámbiale lo que quieras: piezas, colores o el mensaje de la tapa.</p>
+        </div>
+        <div class="ready-grid">
+          <article class="card card-hover ready-card reveal">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-amiga.webp" alt="Caja de bombones surtidos para cumpleaños" loading="lazy" decoding="async"></div>
+            <div class="card-body"><h3>Cumple de mejor amiga</h3><p class="pieces">9 piezas · trufas, alfajores, chocotejas y brownie</p>
+              <div class="ready-foot"><span class="price" data-price-of="amiga">S/ 43.00</span><a class="btn btn-outline btn-sm" href="disena.html?caja=amiga">Personalizar</a></div></div>
+          </article>
+          <article class="card card-hover ready-card reveal reveal-d1">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-perdon.webp" alt="Bombones en forma de corazón con decoración rosada" loading="lazy" decoding="async"></div>
+            <div class="card-body"><h3>Perdón 🥺</h3><p class="pieces">6 piezas · trufas rosadas y alfajores</p>
+              <div class="ready-foot"><span class="price" data-price-of="perdon">S/ 30.00</span><a class="btn btn-outline btn-sm" href="disena.html?caja=perdon">Personalizar</a></div></div>
+          </article>
+          <article class="card card-hover ready-card reveal reveal-d2">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-chamba.webp" alt="Bombones de chocolate en plato" loading="lazy" decoding="async"></div>
+            <div class="card-body"><h3>Felicitaciones por tu chamba nueva</h3><p class="pieces">6 piezas · brownies, chocotejas y trufas bitter</p>
+              <div class="ready-foot"><span class="price" data-price-of="chamba">S/ 31.00</span><a class="btn btn-outline btn-sm" href="disena.html?caja=chamba">Personalizar</a></div></div>
+          </article>
+          <article class="card card-hover ready-card reveal reveal-d3">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <div class="card-media"><img src="assets/img/caja-aniversario.webp" alt="Caja abierta con bombones surtidos" loading="lazy" decoding="async"></div>
+            <div class="card-body"><h3>Aniversario</h3><p class="pieces">12 piezas · trufas rosadas con hojilla dorada</p>
+              <div class="ready-foot"><span class="price" data-price-of="aniversario">S/ 56.00</span><a class="btn btn-outline btn-sm" href="disena.html?caja=aniversario">Personalizar</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POR QUÉ AVRIL ===================== -->
+    <section class="section" style="padding-top:0" aria-labelledby="por-que-t">
+      <div class="container why-grid">
+        <div class="arch why-photo reveal">
+          <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+          <img src="assets/img/repostera.webp" alt="Repostera trabajando en una cocina artesanal" loading="lazy" decoding="async">
+        </div>
+        <div>
+          <div class="section-head reveal">
+            <span class="eyebrow">Por qué Avril</span>
+            <h2 id="por-que-t">La IA propone, <em>nuestras manos lo hacen.</em></h2>
+            <p>Reposteros artesanales y un equipo técnico trabajando juntos para que tu caja se vea como la imaginaste y sepa todavía mejor.</p>
+          </div>
+          <div class="rtb-grid">
+            <div class="rtb reveal"><span class="icon-circle"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.7-7 10-7 10z"/></svg></span><div><h3>100% artesanal</h3><p>Cada pieza se hace a mano, con insumos de primera.</p></div></div>
+            <div class="rtb reveal reveal-d1"><span class="icon-circle"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><h3>Diseños que sí se pueden hacer</h3><p>Te decimos qué replicamos y cómo, antes de pagar.</p></div></div>
+            <div class="rtb reveal reveal-d2"><span class="icon-circle"><svg class="icon" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19l7-7"/></svg></span><div><h3>Sabor y frescura primero</h3><p>No basta con que se vea igual: tiene que saber delicioso.</p></div></div>
+            <div class="rtb reveal reveal-d3"><span class="icon-circle"><svg class="icon" viewBox="0 0 24 24"><path d="M3 8l9-4 9 4v8l-9 4-9-4z"/><path d="M3 8l9 4 9-4M12 12v8"/></svg></span><div><h3>Llega intacto a tu puerta</h3><p>Empaque y delivery pensados para que nada se mueva.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== B2B ===================== -->
+    <section class="section" style="padding-top:0" aria-labelledby="b2b-t">
+      <div class="container">
+        <div class="b2b reveal">
+          <div>
+            <span class="eyebrow">Avril para empresas</span>
+            <h2 id="b2b-t">Regalos para tu equipo, <em>con tu logo</em></h2>
+            <p>Cajitas personalizadas por volumen, factura electrónica y calendario de cumpleaños de colaboradores.</p>
+            <a class="btn btn-outline" href="empresas.html">Cotizar para empresas</a>
+          </div>
+          <div class="b2b-photo">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <img src="assets/img/caja-corporativa.webp" alt="Caja con bombones en cuadrícula lista para regalar" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIOS ===================== -->
+    <!-- [TESTIMONIO DE EJEMPLO] Reemplazar por testimonios reales con permiso del cliente -->
+    <section class="section" style="padding-top:0" aria-labelledby="testi-t">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Lo que nos cuentan</span>
+          <h2 id="testi-t">Detalles que <em>sí llegaron</em> como los soñaron</h2>
+        </div>
+        <div class="testi-grid">
+          <figure class="card testi reveal">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <img src="assets/img/testimonio-1.webp" alt="Trufas cubiertas de frutos secos" loading="lazy" decoding="async">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg></div>
+            <blockquote>“Le mandé un TikTok y llegó igualito. Mi amiga no podía creer que era para ella.”</blockquote>
+            <figcaption><cite>Cliente de ejemplo · Surco</cite></figcaption>
+          </figure>
+          <figure class="card testi reveal reveal-d1">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <img src="assets/img/testimonio-2.webp" alt="Galletas rellenas sostenidas en la mano" loading="lazy" decoding="async">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg></div>
+            <blockquote>“Me encantó ver las fotos mientras la preparaban. Los alfajores, de otro nivel.”</blockquote>
+            <figcaption><cite>Cliente de ejemplo · Miraflores</cite></figcaption>
+          </figure>
+          <figure class="card testi reveal reveal-d2">
+            <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+            <img src="assets/img/testimonio-3.webp" alt="Dos trufas de chocolate en una cajita" loading="lazy" decoding="async">
+            <div class="stars" aria-label="5 de 5 estrellas"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg><svg viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.9l-5.3 2.7 1-5.8-4.2-4.1 5.9-.9z"/></svg></div>
+            <blockquote>“Pedí cajitas para todo el equipo con nuestro logo. Llegaron perfectas y a tiempo.”</blockquote>
+            <figcaption><cite>Empresa de ejemplo · San Isidro</cite></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo-avril.png" srcset="assets/img/logo-avril.png 1x, assets/img/logo-avril@2x.png 2x" alt="Avril · artesanía hecha dulce" width="128" height="72" loading="lazy">
+          <p>Garantía de fidelidad · Delivery en Lima · Yape, Plin y tarjeta</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explora</h3>
+          <ul><li><a href="disena.html">Diseña con IA</a></li><li><a href="inspirate.html">Inspírate</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="mi-avril.html">Mi Avril</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="https://wa.me/51944999854" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 1.8 3.8 4 4.6"/></svg>Habla con un repostero</a></li>
+            <li><a href="inspirate.html#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Síguenos</h3>
+          <ul>
+            <!-- [URL INSTAGRAM] pendiente -->
+            <li><a href="#" title="[URL PENDIENTE]"><svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Instagram</a></li>
+            <!-- [URL TIKTOK] pendiente -->
+            <li><a href="#" title="[URL PENDIENTE]"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.6 2.4 4.3 5 4.5"/></svg>TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Avril Artesanía Hecha Dulce · Lima, Perú</span>
+        <span>Fotos provisionales de Unsplash · <a href="creditos.html">Créditos fotográficos</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Barra fija en móvil -->
+  <div class="mbar">
+    <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+    <a class="wa-round" href="https://wa.me/51944999854" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 1.8 3.8 4 4.6"/></svg></a>
+  </div>
+</body>
+</html>

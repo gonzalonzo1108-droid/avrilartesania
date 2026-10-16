@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es-PE" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Avril · Sigue tu pedido | Avril Artesanía hecha dulce</title>
+  <meta name="description" content="Sigue tu caja Avril en vivo, repite tus diseños guardados y guarda tus fechas especiales.">
+  <meta name="theme-color" content="#FFF6F2">
+  <meta property="og:title" content="Mi Avril · Sigue tu pedido">
+  <meta property="og:description" content="Sigue tu caja Avril en vivo, repite tus diseños y guarda tus fechas especiales.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Poppins:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20261016">
+  <script defer src="lib/manifest.js?v=20261016"></script>
+  <script defer src="main.js?v=20261016"></script>
+</head>
+<body class="has-mbar">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Avril, ir al inicio">
+        <img src="assets/img/logo-avril.png" srcset="assets/img/logo-avril.png 1x, assets/img/logo-avril@2x.png 2x" alt="Avril · artesanía hecha dulce" width="99" height="56">
+      </a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="disena.html">Diseña con IA</a>
+        <a href="inspirate.html">Inspírate</a>
+        <a href="empresas.html">Empresas</a>
+        <a href="mi-avril.html" aria-current="page">Mi Avril</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+        <button class="burger" type="button" data-open-drawer aria-controls="drawer" aria-expanded="false" aria-label="Abrir menú">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="drawer" id="drawer" aria-label="Menú">
+    <div class="drawer-top">
+      <img src="assets/img/logo-avril.png" alt="Avril" width="71" height="40" style="height:40px;width:auto">
+      <button class="burger" type="button" data-close-drawer aria-label="Cerrar menú"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <nav aria-label="Principal móvil">
+      <a href="disena.html">Diseña con IA</a>
+      <a href="inspirate.html">Inspírate</a>
+      <a href="empresas.html">Empresas</a>
+      <a href="mi-avril.html" aria-current="page">Mi Avril</a>
+    </nav>
+    <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+    <a class="btn btn-outline" style="margin-top:.7rem" href="https://wa.me/51944999854" target="_blank" rel="noopener">Hablar con un repostero</a>
+  </div>
+
+  <main id="main" class="section" style="padding-top:clamp(28px,5vw,56px)" data-mi-avril>
+    <div class="container">
+      <div class="tabs" role="tablist" aria-label="Mi Avril">
+        <button type="button" role="tab" id="t-pedido" aria-controls="pedido" aria-selected="true">Mis pedidos</button>
+        <button type="button" role="tab" id="t-disenos" aria-controls="disenos" aria-selected="false" tabindex="-1">Mis diseños</button>
+        <button type="button" role="tab" id="t-fechas" aria-controls="fechas" aria-selected="false" tabindex="-1">Fechas especiales</button>
+      </div>
+
+      <!-- ============ SEGUIMIENTO (simulado) ============ -->
+      <section id="pedido" role="tabpanel" aria-labelledby="t-pedido">
+        <div class="track-grid">
+          <div>
+            <span class="eyebrow">Pedido <span data-t-id>AV-0001</span> · seguimiento en vivo</span>
+            <h1 style="font-size:clamp(2.2rem,6vw,3.6rem)">Tu caja se está <em>decorando</em></h1>
+            <p class="eta"><svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-t-eta>Llega hoy entre 4 y 6 p. m.</span></p>
+
+            <ol class="timeline">
+              <li class="done">
+                <span class="tl-dot"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                <span class="when">9:12 a. m.</span>
+                <h3>Pedido confirmado</h3>
+                <p>Render aprobado guardado</p>
+              </li>
+              <li class="done">
+                <span class="tl-dot"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+                <span class="when">11:40 a. m.</span>
+                <h3>Preparando tus piezas</h3>
+                <p>Trufas bañadas y alfajores rellenos</p>
+                <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+                <div class="tl-photo"><img src="assets/img/proceso-banado.webp" alt="Trufa bañándose en chocolate" loading="lazy" decoding="async"></div>
+              </li>
+              <li class="now" aria-current="step">
+                <span class="tl-dot" aria-hidden="true"></span>
+                <span class="when">Ahora</span>
+                <h3>Decorando y empacando</h3>
+                <p>Hojilla dorada y mensaje en la tapa</p>
+                <!-- FOTO PROVISIONAL: reemplazar por foto real de Avril -->
+                <div class="tl-photo"><img src="assets/img/proceso-decorado.webp" alt="Repostera colocando bombones en su caja" loading="lazy" decoding="async"></div>
+              </li>
+              <li>
+                <span class="tl-dot" aria-hidden="true"></span>
+                <h3>En camino</h3>
+                <p>Te avisamos por WhatsApp</p>
+              </li>
+              <li>
+                <span class="tl-dot" aria-hidden="true"></span>
+                <h3>Entregado</h3>
+                <p>Recibirás tu comparación “tu diseño vs. tu caja”</p>
+              </li>
+            </ol>
+          </div>
+
+          <aside class="side-stack" aria-label="Detalles del pedido">
+            <div class="panel">
+              <h2>Tu render aprobado</h2>
+              <div class="box-preview"><div data-track-box style="width:100%;display:grid;justify-items:center"></div></div>
+              <p class="small" style="margin-top:.8rem" data-t-piezas>3 trufas · 2 alfajores · 2 chocotejas · 1 brownie</p>
+            </div>
+            <div class="panel">
+              <h2>Datos de entrega</h2>
+              <dl class="data-list">
+                <dt>Distrito</dt><dd data-t-distrito>Miraflores</dd>
+                <dt>Mensaje</dt><dd data-t-mensaje>Feliz aniversario, amor</dd>
+                <dt>Entrega sorpresa</dt><dd data-t-sorpresa>Sí</dd>
+                <dt>Total</dt><dd data-t-total>S/ 39.50</dd>
+              </dl>
+            </div>
+            <div class="panel remind-card">
+              <h2>¿Te recordamos esta fecha?</h2>
+              <label class="check"><input type="checkbox" data-track-remind><span>Sí, avísenme el próximo año para volver a sorprender.</span></label>
+            </div>
+            <a class="btn btn-outline" href="https://wa.me/51944999854" target="_blank" rel="noopener">Hablar con un repostero</a>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ MIS DISEÑOS ============ -->
+      <section id="disenos" role="tabpanel" aria-labelledby="t-disenos" hidden>
+        <div class="section-head">
+          <h2 style="font-size:clamp(1.9rem,4.4vw,2.8rem)">Mis <em>diseños</em></h2>
+          <p>Tus cajas guardadas en este navegador. Repite una tal cual o cámbiale lo que quieras.</p>
+        </div>
+        <div class="designs-grid" data-designs>
+          <div class="empty" style="grid-column:1/-1"><p>Aún no guardas diseños. Arma tu primera caja y aparecerá aquí.</p><a class="btn btn-primary" href="disena.html">Crear mi caja</a></div>
+        </div>
+      </section>
+
+      <!-- ============ FECHAS ESPECIALES ============ -->
+      <section id="fechas" role="tabpanel" aria-labelledby="t-fechas" hidden>
+        <div class="track-grid">
+          <div>
+            <div class="section-head">
+              <h2 style="font-size:clamp(1.9rem,4.4vw,2.8rem)">Fechas <em>especiales</em></h2>
+              <p>Guarda cumpleaños y aniversarios, y te recordamos con tiempo para armar su caja. Se guardan solo en este navegador.</p>
+            </div>
+            <form class="panel form-grid" data-reminder-form>
+              <div class="field"><label for="r-nombre">¿De quién es la fecha?</label><input class="input" id="r-nombre" type="text" required maxlength="40" placeholder="Mi mejor amiga"></div>
+              <div class="field"><label for="r-fecha">Fecha</label><input class="input" id="r-fecha" type="date" required></div>
+              <div class="field"><label for="r-ocasion">Ocasión</label>
+                <select class="select" id="r-ocasion"><option>Cumpleaños</option><option>Aniversario</option><option>Amistad</option><option>Día de la madre</option><option>Otro</option></select></div>
+              <button class="btn btn-primary" type="submit">Guardar fecha</button>
+            </form>
+          </div>
+          <div>
+            <h3 style="font-size:1.25rem">Tus recordatorios</h3>
+            <ul class="reminders" data-reminders><li class="muted">Todavía no tienes fechas guardadas.</li></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo-avril.png" srcset="assets/img/logo-avril.png 1x, assets/img/logo-avril@2x.png 2x" alt="Avril · artesanía hecha dulce" width="128" height="72" loading="lazy">
+          <p>Garantía de fidelidad · Delivery en Lima · Yape, Plin y tarjeta</p>
+        </div>
+        <div class="footer-col">
+          <h3>Explora</h3>
+          <ul><li><a href="disena.html">Diseña con IA</a></li><li><a href="inspirate.html">Inspírate</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="mi-avril.html">Mi Avril</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="https://wa.me/51944999854" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 1.8 3.8 4 4.6"/></svg>Habla con un repostero</a></li>
+            <li><a href="inspirate.html#faq">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Síguenos</h3>
+          <ul>
+            <!-- [URL INSTAGRAM] pendiente -->
+            <li><a href="#" title="[URL PENDIENTE]"><svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg>Instagram</a></li>
+            <!-- [URL TIKTOK] pendiente -->
+            <li><a href="#" title="[URL PENDIENTE]"><svg class="icon" viewBox="0 0 24 24"><path d="M14 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 4c.5 2.6 2.4 4.3 5 4.5"/></svg>TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Avril Artesanía Hecha Dulce · Lima, Perú</span>
+        <span>Fotos provisionales de Unsplash · <a href="creditos.html">Créditos fotográficos</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="mbar">
+    <a class="btn btn-primary" href="disena.html">Crear mi caja</a>
+    <a class="wa-round" href="https://wa.me/51944999854" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="icon" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 9.5c.3 2 1.8 3.8 4 4.6"/></svg></a>
+  </div>
+</body>
+</html>
